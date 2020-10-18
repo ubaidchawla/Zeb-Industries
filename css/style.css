@@ -1,13 +1,19 @@
 
-
+@import url(../fonts/Elianto/font.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
 body
 	{
 		background: #f8f6f6;
     color: #000000;
-		font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
 	}
 
+  h1, h2, h3, h4
+  {
+    font-family: 'Elianto';
+    text-transform: uppercase;
+  }
 @media (min-width: 768px) {
   .container {
     width: 700px;
@@ -84,6 +90,14 @@ img {
     position: relative;
     top: 20px;
   }
+
+  @media ( max-width: 600px ) {
+    
+    .navbar-default {
+      padding-right: 8px;
+
+    }
+  }
 .navbar-default .navbar-brand {
     font-size: 40px;
     line-height: 40px;
@@ -112,7 +126,7 @@ img {
   	border-radius: 0px;
    	border: none;
    	margin-top: 20px;
-   	margin-bottom: 30px;
+   	margin-bottom: 20px;
 }
 .navbar-default .navbar-toggle .icon-bar {
     background: #fff;
@@ -399,15 +413,6 @@ select#sub-menu, select#sub-menu>option {
 }
 
 
-
-@import url(https://fonts.googleapis.com/css?family=Raleway);
-
-
-
-body{
-  font-family: 'Raleway', sans-serif;
-}
-
 .main-title{
   color: #2d2d2d;
   text-align: center;
@@ -481,3 +486,36 @@ body{
   top: 20%;
 }
 
+.about-content{
+  min-height: calc(85vh - 40px);
+}
+.grid-parent {
+  display: grid;
+  grid-template-columns: 2fr 0.3fr;
+  border: 1px solid black;
+  margin-top: 5px;
+}
+.grid-child p{
+  padding: 15px 10px 0px 30px;
+  text-align: left;
+}
+.grid-child a img{
+  padding: 20%;
+}
+.grid-child img{
+  padding: 20%;
+}
+.right {
+  text-align: center;
+  font-size: 1.5em;
+}
+@media (max-width: 500px) {
+  .about-content{
+    min-height: calc(85vh - 73px);
+  }
+  
+}
+address{
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
