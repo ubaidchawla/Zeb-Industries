@@ -329,9 +329,9 @@ background-color: #ffffff;
 }
 
 .card:hover{
-  -ms-transform: scale(1.1); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
-  transform: scale(1.1); 
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
 }
 @media (min-width:991px) {
 .content {
@@ -426,7 +426,7 @@ select#sub-menu, select#sub-menu>option {
   overflow: hidden;
   border: 1px dotted black;
 }
-
+.overlays .content-overlay,
 .contents .content-overlay {
   background: rgba(0,0,0,0.7);
   position: absolute;
@@ -442,6 +442,10 @@ select#sub-menu, select#sub-menu>option {
   transition: all 0.4s ease-in-out 0s;
 }
 
+.content-details p{
+  color: white;
+}
+.overlays:hover .content-overlay,
 .contents:hover .content-overlay{
   opacity: 1;
 }
@@ -472,7 +476,11 @@ select#sub-menu, select#sub-menu>option {
   left: 50%;
   opacity: 1;
 }
-
+.overlays:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
 .content-details h2{
   color: #fff;
   font-weight: 500;
@@ -518,4 +526,11 @@ select#sub-menu, select#sub-menu>option {
 address{
   margin-bottom: 5px;
   margin-top: 5px;
+}
+
+/* download button */
+
+.buttonDownload{
+  padding: 16px 30px;
+  font-size: 1.5rem;
 }
